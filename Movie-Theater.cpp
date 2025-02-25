@@ -1,4 +1,6 @@
 #include<iostream>
+#include<cstdlib>
+#include<cmath>
 using namespace std;
 int main()
 {
@@ -12,11 +14,11 @@ int main()
   for(int i=0;i<rows;i++)
     movie[i]=new int[cols];
 
-  cout<<"Enter the values for seats(either 0 or 1): "<<endl;
+  srand(time(0));
   for(int i=0;i<rows;i++)
   {
     for(int j=0;j<cols;j++)
-      cin>>*(*(movie+i)+j);
+      *(*(movie+i)+j)= rand()%2;
   }
 
   int count=0;
