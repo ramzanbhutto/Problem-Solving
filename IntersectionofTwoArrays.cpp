@@ -38,13 +38,16 @@ int main()
 vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
 {
  unordered_set<int> set1(nums1.begin(),nums1.end());
- unordered_set<int> set2;
+ //unordered_set<int> set2;
  
+  vector<int> result;
   for(int num: nums2){
-    if(set1.count(num))
-      set2.insert(num);
+    if(set1.count(num)){
+     result.push_back(num);
+      set1.erase(num);
+    }
   }
-  vector<int>result(set2.begin(),set2.end());
+  //vector<int>result(set2.begin(),set2.end());
 
   return result;
 }
