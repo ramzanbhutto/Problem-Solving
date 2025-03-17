@@ -7,7 +7,7 @@ int main()
   string str;
   cout<<"Enter the string: ";
   cin>>str;
-  cout<<"The string after rotating vowels is: "<<sortVowels(str)<<endl;
+  cout<<"The string after sorting vowels is: "<<sortVowels(str)<<endl;
 
   return 0;
 }
