@@ -10,7 +10,7 @@ void time(){
 void solve(int n){
   int res=0;
   int h=100,tw=20, ten=10, five=5, one=1;
-  
+  /*   cout<<temp/100 + (temp%100)/20 + (temp%20)/10 + (temp%10)/5 + (temp%5)<<endl; */
   while(n>0){
     if(n>=h){
       n-= h;
