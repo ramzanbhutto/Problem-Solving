@@ -17,7 +17,7 @@ void solve(int n){
   else{
     int arr[n];
     iota(arr, arr+n, 1);
-    for(int i=0;i<n/2;i++)  swap(arr[i], arr[i+1]);
+    for(int i=0;i<n;i+=2)  swap(arr[i], arr[i+1]);
     for(auto i:arr)  cout<<i<<" ";
     cout<<endl;
   }
