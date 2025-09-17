@@ -1,4 +1,5 @@
 #include<iostream>
+#include <stdexcept>
 using namespace std;
 
 struct Node{
@@ -39,7 +40,7 @@ public:
     do{
       cout<<curr->num<<" ";
       curr = curr->next;
-    }while(curr != head);
+    }while(curr !=head);
     cout<<endl;
   }
 
@@ -100,7 +101,13 @@ int main(){
   }
   jc.display();
 
-  int survivor = jc.solve(k);
+  int survivor;
+  try{
+    survivor = jc.solve(k);
+  }catch(const runtime_error& e){
+    cerr<<"Error: "<<e.what()<<endl;
+    return -1;
+  }
   cout<<"The survivor is person number: "<<survivor<<endl;
   return 0;
 }
