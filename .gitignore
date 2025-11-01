@@ -1,7 +1,0 @@
-# Ignore everthing
-/*
-
-# But not these files...
-!.gitignore
-!/PasswordGenerator
-!/README.md 
