@@ -1,5 +1,0 @@
-    n = int(input())
-    a = list(map(int, input().split()))
-    max_welfare = max(a)
-    total_cost = sum(max_welfare - welfare for welfare in a)
-    print(total_cost)
