@@ -2,6 +2,12 @@
 
 A colorful terminal-based visualization of the classic Tower of Hanoi puzzle solved using recursion.
 
+## Demo
+
+https://github.com/user-attachments/assets/a29e8bdb-41f7-4427-88d3-35fa7b1199a4
+
+> **Note:** Any visual glitches in the recording are due to screen capture limitations, not the program itself.
+
 ## How Recursion Works Here
 
 **The Logic:**
@@ -48,3 +54,5 @@ Press `Ctrl+C` to exit anytime.
 
 - python 3.x
 - Terminal with ANSI color support
+
+## 
